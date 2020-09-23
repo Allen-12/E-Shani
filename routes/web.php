@@ -21,5 +21,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get("/videos/create","VideoController@create");
-Route::post('/videos','VideoController@store');
+Route::get("/videocategories/create","VideoCategoryController@create");
+Route::post("/videocategories","VideoCategoryController@store");
+
+Route::get("/videocategories/{videoCategory}/videos/create","VideoController@create");
+Route::post('/videocategories/{videoCategory}/videos','VideoController@store');

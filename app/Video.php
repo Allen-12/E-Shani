@@ -7,4 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Video extends Model
 {
     protected $guarded = [];
+
+    public function videoCategory()
+    {
+        return $this->belongsTo(VideoCategory::class);
+    }
 }
