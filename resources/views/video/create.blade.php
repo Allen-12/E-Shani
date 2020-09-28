@@ -1,19 +1,6 @@
 @extends('layouts.app')
-
+@section('title','Create-video')
 @section('content')
-    <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/css/uikit.min.css" />
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="icon" href="images/logo.png" type="svg">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
-    <meta charset="utf-8">
-    <title>{{ config("app.name") }}</title>
-</head>
-
-<body>
 
 <div class="flex">
     <div class="mx-auto py-6">
@@ -62,30 +49,11 @@
                 <br>
                 <br>
                 <p style="text-align:center">
-{{--                    <button onclick="confirmTing(0)" onclick="scrollToTop()" class="btn btn-outline-info" id="submitButton" type="submit">Continue</button></p>--}}
+
                     <button class="btn btn-outline-info" id="submitButton" type="submit">Upload Video</button></p>
                 <br>
 
-{{--                <script>--}}
-{{--                    function scrollToTop(){--}}
-{{--                        window.scrollTo(20,0);--}}
-{{--                    }--}}
-{{--                    function confirmTing(a){--}}
-{{--                        if(a==0){--}}
-{{--                            document.getElementById('submitButton').setAttribute( "onClick", "confirmTing(1)" );--}}
-{{--                            console.log(a);--}}
-{{--                            //$('html, body').animate({ scrollTop: 80 }, 'slow');--}}
-{{--                            window.alert('Confirm your input and submit again');--}}
-{{--                        }else{--}}
-{{--                            document.getElementById("coachForm").submit();--}}
-{{--                            $.ajax({--}}
-{{--                                type: 'POST',--}}
-{{--                                url: '',--}}
-{{--                                data: ''--}}
-{{--                            });--}}
-{{--                        }--}}
-{{--                    }--}}
-{{--                </script>--}}
+
             </form>
         </div>
     </div>
