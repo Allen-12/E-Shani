@@ -25,6 +25,9 @@
 
                 <br/>
                 <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" name="title" id="title" required placeholder="E.g Sharing is caring"/>
+                @error('title')
+                    <small class="text-danger">{{ $message }}</small>
+                @enderror
                 <br/>
                 <br/>
                 <br/>
@@ -35,6 +38,9 @@
 
                 <br/>
                 <textarea class="headerImage shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="description" name="description" placeholder="Enter a short description of the video"></textarea>
+                @error('description')
+                <small class="text-danger">{{ $message }}</small>
+                @enderror
                 <br/>
                 <br/>
                 <br/>
@@ -43,7 +49,10 @@
                 </label>
 
                 <br/>
-                <input  name="url" type="file"id="video" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder=""></input>
+                <input  name="url" type="file" id="video" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="">
+                @error('url')
+                <small class="text-danger">{{ $message }}</small>
+                @enderror
                 <br/>
 
                 <br>
@@ -59,7 +68,3 @@
     </div>
 </div>
 @endsection
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit-icons.min.js"></script>
-</body>
-</html>
