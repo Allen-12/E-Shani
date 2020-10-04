@@ -26,3 +26,8 @@ Route::post("/videocategories","VideoCategoryController@store");
 
 Route::get("/videocategories/{videoCategory}/videos/create","VideoController@create");
 Route::post('/videocategories/{videoCategory}/videos','VideoController@store');
+Route::get('/videocategories/{videoCategory}/videos','VideoController@index');
+Route::get('/videocategories/{videoCategory}/videos/{video}/edit','VideoController@edit');
+Route::patch('/videocategories/{videoCategory}/videos/{video}','VideoController@update');
+Route::delete('/videocategories/{videoCategory}/videos/{video}/delete','VideoController@destroy');
+
