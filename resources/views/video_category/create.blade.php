@@ -26,7 +26,9 @@
                 <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="name" id="categoryName" required placeholder="E.g Nature"></input>
                 <br/>
                 <br/>
-
+                @error('categoryName')
+                                    <small class="text-danger">{{ $message }}</small>
+                                @enderror
                 <p style="text-align:center">
                     <button class="btn btn-outline-info" id="submitButton" type="submit">Create Category</button></p>
                 <br>
