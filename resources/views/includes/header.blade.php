@@ -16,7 +16,7 @@
        </div>
 
        <div class="collapse navbar-collapse">
-           <ul class="navbar-nav">
+           <ul class="navbar-nav ml-auto">
                <li class="nav-item active">
                    <button class="btn btn-primary btn-round">Sign up</button>
                </li>
@@ -24,16 +24,7 @@
                    <a href="#pablo" class="nav-link">log in</a>
                </li>
 
-           <form class="form-inline ml-auto ">
-               <div class="form-group no-border">
 
-                 <input type="text" class="form-control" placeholder="Search">
-                 <span class="bmd-help">All the videos you are looking for</span>
-               </div>
-               <button type="submit" class="btn btn-white btn-just-icon btn-round">
-                   <i class="material-icons">search</i>
-               </button>
-           </form>
    </ul>
        </div>
    </div>

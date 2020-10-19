@@ -12,7 +12,8 @@
         <h1>Supplement your childs education</h1>
         <h3 class="title text-center">CBC content from Kenya’s leading teachers. Expand your child's mind </h3>
         <p>
-<button type="button" class="btn btn-info btn-lg">Join Us!</button>
+<button type="button" class="btn btn-primary btn-lg">Sign up</button>
+<button type="button" class="btn btn-info btn-lg">Log in</button>
 
 </p>
       </div>
@@ -24,48 +25,44 @@
 <div class="main main-raised">
 <div class="container">
   <div class="section text-center">
+    <div class="container">
+      <h1 class="display-4">Content for all ages</h1>
+      <p class="lead">More Catchy words</p>
+    </div>
     <ul class="nav nav-pills nav-pills-rose justify-content-center">
-  <li class="nav-item"><a class="nav-link active" href="#pill1" data-toggle="tab">4 year olds - 6 year olds</a></li>
+  <li class="nav-item"><a class="nav-link active" href="#pill1" data-toggle="tab">3 year olds - 6 year olds</a></li>
   <li class="nav-item"><a class="nav-link" href="#pill2" data-toggle="tab">7 year olds - 10 year olds</a></li>
 
 </ul>
 <div class="tab-content tab-space">
     <div class="tab-pane active" id="pill1">
 
-      <div class="uk-child-width-1-3@m" uk-grid>
+      <div class="uk-child-width-1-2@m" uk-grid>
           <div>
               <div class="uk-card uk-card-default">
                   <div class="uk-card-media-top">
-                      <img src="images/light.jpg" alt="">
+                      <img src="img/l6.jpg" alt="">
                   </div>
                   <div class="uk-card-body">
-                      <h3 class="uk-card-title">Media Top</h3>
+                      <h3 class="uk-card-title">For 3-4 year olds</h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                      <button class="btn btn-rose btn-round">Get started</button>
                   </div>
               </div>
           </div>
           <div>
               <div class="uk-card uk-card-default">
                   <div class="uk-card-media-top">
-                      <img src="images/light.jpg" alt="">
+                      <img src="img/l3.jpg" alt="">
                   </div>
                   <div class="uk-card-body">
-                      <h3 class="uk-card-title">Media Top</h3>
+                      <h3 class="uk-card-title">For 5-6 year olds</h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <button class="btn btn-rose btn-round">Get started</button>
                   </div>
               </div>
           </div>
-          <div>
-              <div class="uk-card uk-card-default">
-                  <div class="uk-card-media-top">
-                      <img src="images/light.jpg" alt="">
-                  </div>
-                  <div class="uk-card-body">
-                      <h3 class="uk-card-title">Media Top</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                  </div>
-              </div>
-          </div>
+
       </div>
 
 
@@ -74,45 +71,43 @@
     </div>
 
     <div class="tab-pane" id="pill2">
-      <div class="uk-child-width-1-3@m" uk-grid>
+      <div class="uk-child-width-1-2@m" uk-grid>
           <div >
               <div class="uk-card uk-card-default">
                   <div class="uk-card-media-top">
-                      <img src="images/light.jpg" alt="">
+                      <img src="img/l1.jpg" alt="">
                   </div>
                   <div class="uk-card-body">
-                      <h3 class="uk-card-title">Media Top</h3>
+                      <h3 class="uk-card-title">For 7-8 year olds</h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <button class="btn btn-rose btn-round">Get started</button>
                   </div>
               </div>
           </div>
           <div>
               <div class="uk-card uk-card-default">
                   <div class="uk-card-media-top">
-                      <img src="images/light.jpg" alt="">
+                      <img src="img/l5.jpg" alt="">
                   </div>
                   <div class="uk-card-body">
-                      <h3 class="uk-card-title">Media Top</h3>
+                      <h3 class="uk-card-title">For 9-10 Year olds</h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <button class="btn btn-rose btn-round">Get started</button>
                   </div>
               </div>
           </div>
-          <div>
-              <div class="uk-card uk-card-default">
-                  <div class="uk-card-media-top">
-                      <img src="images/light.jpg" alt="">
-                  </div>
-                  <div class="uk-card-body">
-                      <h3 class="uk-card-title">Media Top</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                  </div>
-              </div>
-          </div>
+
       </div>
     </div>
 
 </div>
 
+<!-- <div class="jumbotron jumbotron-fluid"> -->
+  <div class="container">
+    <h1 class="display-4">Our stats</h1>
+    <p class="lead">More Catchy words</p>
+  </div>
+<!-- </div> -->
 
 <div class="container">
 	<div class="row">
@@ -122,29 +117,29 @@
 		<div class="row text-center">
 	        <div class="col">
 	        <div class="counter">
-      <i class="fa fa-code fa-2x"></i>
-      <h2 class="timer count-title count-number" data-to="100" data-speed="1500"></h2>
-       <p class="count-text ">Our Customer</p>
+      <i class="fa fa-users fa-2x"></i>
+      <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+       <p class="count-text "> learners</p>
     </div>
 	        </div>
               <div class="col">
                <div class="counter">
-      <i class="fa fa-coffee fa-2x"></i>
-      <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
-      <p class="count-text ">Happy Clients</p>
+      <i class="fa fa-play-circle fa-2x"></i>
+      <h2 class="timer count-title count-number" data-to="700" data-speed="1500"></h2>
+      <p class="count-text ">Videos</p>
     </div>
               </div>
               <div class="col">
                   <div class="counter">
-      <i class="fa fa-lightbulb-o fa-2x"></i>
-      <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
-      <p class="count-text ">Project Complete</p>
+      <i class="fa fa-book fa-2x"></i>
+      <h2 class="timer count-title count-number" data-to="10" data-speed="1500"></h2>
+      <p class="count-text ">Topics</p>
     </div></div>
               <div class="col">
               <div class="counter">
-      <i class="fa fa-bug fa-2x"></i>
-      <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
-      <p class="count-text ">Coffee With Clients</p>
+      <i class="fa fa-globe  fa-2x"></i>
+      <h2 class="timer count-title count-number" data-to="7" data-speed="1500"></h2>
+      <p class="count-text ">Counties</p>
     </div>
               </div>
          </div>
@@ -153,6 +148,12 @@
 <br>
 <br>
 <!-- courosell -->
+<!-- <div class="jumbotron jumbotron-fluid"> -->
+  <div class="container">
+    <h1 class="display-4">Testimonials</h1>
+    <p class="lead">More Catchy words</p>
+  </div>
+<!-- </div> -->
 <div uk-slider="center: true">
 
     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
@@ -161,7 +162,7 @@
             <li>
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top">
-                        <img src="images/photo.jpg" alt="">
+                        <img src="img/l1.jpg" alt="" class="rounded img-fluid">
                     </div>
                     <div class="uk-card-body">
                         <h3 class="uk-card-title">Headline</h3>
@@ -172,7 +173,7 @@
             <li>
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top">
-                        <img src="images/dark.jpg" alt="">
+                          <img src="img/l1.jpg" alt="" class="rounded img-fluid">
                     </div>
                     <div class="uk-card-body">
                         <h3 class="uk-card-title">Headline</h3>
@@ -183,7 +184,7 @@
             <li>
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top">
-                        <img src="images/light.jpg" alt="">
+                        <img src="img/l1.jpg" alt="" class="rounded img-fluid">
                     </div>
                     <div class="uk-card-body">
                         <h3 class="uk-card-title">Headline</h3>
@@ -194,7 +195,7 @@
             <li>
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top">
-                        <img src="images/photo2.jpg" alt="">
+                          <img src="img/l1.jpg" alt="" class="rounded img-fluid">
                     </div>
                     <div class="uk-card-body">
                         <h3 class="uk-card-title">Headline</h3>
@@ -202,17 +203,7 @@
                     </div>
                 </div>
             </li>
-            <li>
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img src="images/photo3.jpg" alt="">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Headline</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                    </div>
-                </div>
-            </li>
+
         </ul>
 
         <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
@@ -252,7 +243,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4 ml-auto mr-auto text-center">
-                  <button class="btn btn-primary btn-raised">
+                  <button class="btn btn-rose btn-raised">
                     Send Message
                   </button>
                 </div>
