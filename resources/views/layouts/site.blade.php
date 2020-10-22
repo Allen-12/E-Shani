@@ -1,7 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/css/uikit.min.css" />
@@ -15,22 +14,19 @@
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/material-kit.min.css?v=2.0.7') }}" >
 
-
-   <link rel="shortcut icon" type="image/x-icon" href="{{ URL::to('logo.png') }}"/>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ URL::to('logo.png') }}"/>
     <title>@yield('title')</title>
 
-  </head>
+</head>
 
-  <body id="page-top">
-  <div class="se-pre-con"></div>
-@include('includes.header')
-@yield('content')
-@include('includes.footer')
-
-  </body>
+<body id="page-top">
+    <div class="se-pre-con"></div>
+    @include('includes.header')
+    @yield('content')
+    @include('includes.footer')
+</body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit-icons.min.js"></script>
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
