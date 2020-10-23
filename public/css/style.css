@@ -42,3 +42,16 @@
  background: url( "https://media2.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif?cid=ecf05e47zys6yntabxkaopn742y1nxc59bhck9psit6fal1f&rid=giphy.gif") center no-repeat #fff;
 }
 /* loader code */
+
+/* next line code */
+.nextline {
+    display: block;
+}
+/* next line code */
+
+/* spacing nav code */
+.navig{
+   margin-top:0px;
+   margin-bottom:5px
+}
+/* spacing nav code */

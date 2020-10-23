@@ -23,7 +23,7 @@
           <div class="card card-login">
             <form class="form" method="" action="">
               <div class="card-header card-header-primary text-center">
-                <h4 class="card-body">Create your EToto account now!</h4>
+                <h4 class="card-body">Log In to Your E-Toto Account!</h4>
 
 
               </div>
@@ -56,7 +56,7 @@
               </div>
               <div class="footer text-center">
                 <a href="#pablo" class="btn btn-rose btn-round btn-lg">Get Started</a>
-                <a href="#pablo" class="btn btn-primary btn-link btn-lg">already have an account? log in</a>
+                <a href="{{ route("register") }}" class="btn btn-primary btn-link btn-lg">Don't have an account? Sign up</a>
               </div>
 
 

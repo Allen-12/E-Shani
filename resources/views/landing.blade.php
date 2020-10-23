@@ -9,8 +9,8 @@
                         <h1>Supplement your childs education</h1>
                         <h3 class="title text-center">CBC content from Kenya’s leading teachers. Expand your child's mind </h3>
                         <p>
-                            <button type="button" class="btn btn-primary btn-lg">Sign up</button>
-                            <button type="button" class="btn btn-info btn-lg">Log in</button>
+                          <a href="{{ route("register") }}"  <button type="button" class="btn btn-primary btn-lg">Sign up</button></a>
+                        <a href="{{ route("login") }}">  <button  type="button" class="btn btn-info btn-lg">Log in</button></a>
                         </p>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
                                     <div class="uk-card-body">
                                         <h3 class="uk-card-title">For 3-4 year olds</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                        <button class="btn btn-rose btn-round">Get started</button>
+                                        <a href="{{ route("register") }}" class="btn btn-rose btn-round">GET started</a>
                                     </div>
                                 </div>
                             </div>
@@ -54,7 +54,7 @@
                                     <div class="uk-card-body">
                                         <h3 class="uk-card-title">For 5-6 year olds</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                        <button class="btn btn-rose btn-round">Get started</button>
+                                        <a href="{{ route("register") }}" class="btn btn-rose btn-round">GET started</a>
                                     </div>
                                 </div>
                             </div>
@@ -76,7 +76,7 @@
                                     <div class="uk-card-body">
                                         <h3 class="uk-card-title">For 7-8 year olds</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                        <button class="btn btn-rose btn-round">Get started</button>
+                                        <a href="{{ route("register") }}" class="btn btn-rose btn-round">GET started</a>
                                     </div>
                                 </div>
                             </div>
@@ -88,7 +88,7 @@
                                     <div class="uk-card-body">
                                         <h3 class="uk-card-title">For 9-10 Year olds</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                        <button class="btn btn-rose btn-round">Get started</button>
+                                        <a href="{{ route("register") }}" class="btn btn-rose btn-round">GET started</a>
                                     </div>
                                 </div>
                             </div>

@@ -5,12 +5,12 @@
       <nav class="float-left">
         <ul>
           <li>
-            <a href="">
+            <a href="{{ route("register") }}">
               Sign up
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="{{ route("login") }}">
               log in
             </a>
           </li>
