@@ -20,6 +20,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/profiles', function () {
+    return view('profiles');
+});// remake this route i was doing this for front end dev purposes
 
 Route::get("/videocategories/create","VideoCategoryController@create");
 Route::post("/videocategories","VideoCategoryController@store");
@@ -30,4 +33,3 @@ Route::get('/videocategories/{videoCategory}/videos','VideoController@index');
 Route::get('/videocategories/{videoCategory}/videos/{video}/edit','VideoController@edit');
 Route::patch('/videocategories/{videoCategory}/videos/{video}','VideoController@update');
 Route::delete('/videocategories/{videoCategory}/videos/{video}/delete','VideoController@destroy');
-
