@@ -20,16 +20,20 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/profiles', function () {
-    return view('profiles');
-});// remake this route i was doing this for front end dev purposes
 
-Route::get("/videocategories/create","VideoCategoryController@create");
-Route::post("/videocategories","VideoCategoryController@store");
+Route::get('/profiles', 'ChildController@index');
+Route::get("/profiles/create", "ChildController@create");
+Route::post("/profiles", "ChildController@store");
+Route::get('/profiles/{child}/show', 'ChildController@show'); // This route shall change very soon
 
-Route::get("/videocategories/{videoCategory}/videos/create","VideoController@create");
-Route::post('/videocategories/{videoCategory}/videos','VideoController@store');
-Route::get('/videocategories/{videoCategory}/videos','VideoController@index');
-Route::get('/videocategories/{videoCategory}/videos/{video}/edit','VideoController@edit');
-Route::patch('/videocategories/{videoCategory}/videos/{video}','VideoController@update');
-Route::delete('/videocategories/{videoCategory}/videos/{video}/delete','VideoController@destroy');
+
+// These routes are used for the admin side
+Route::get("/admin/videocategories/create","VideoCategoryController@create");
+Route::post("/admin/videocategories","VideoCategoryController@store");
+
+Route::get("/admin/videocategories/{videoCategory}/videos/create","VideoController@create");
+Route::post('/admin/videocategories/{videoCategory}/videos','VideoController@store');
+Route::get('/admin/videocategories/{videoCategory}/videos','VideoController@index');
+Route::get('/admin/videocategories/{videoCategory}/videos/{video}/edit','VideoController@edit');
+Route::patch('/admin/videocategories/{videoCategory}/videos/{video}','VideoController@update');
+Route::delete('/admin/videocategories/{videoCategory}/videos/{video}/delete','VideoController@destroy');

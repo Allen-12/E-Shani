@@ -51,8 +51,8 @@
         <tr>
             <td>{{ $category->id }}</td>
             <td>{{ $category->name }}</td>
-            <td><a class="uk-button uk-button-primary" href="/videocategories/{{ $category->id }}/videos/create">Create Video in this Category</a></td>
-            <td><a class="uk-button uk-button-primary" href="/videocategories/{{ $category->id }}/videos">View Videos in this Category</a></td>
+            <td><a class="uk-button uk-button-primary" href="/admin/videocategories/{{ $category->id }}/videos/create">Create Video in this Category</a></td>
+            <td><a class="uk-button uk-button-primary" href="/admin/videocategories/{{ $category->id }}/videos">View Videos in this Category</a></td>
         </tr>
     @endforeach
     </tbody>

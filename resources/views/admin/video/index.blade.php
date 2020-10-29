@@ -14,8 +14,8 @@
                         <h5 class="card-title">{{ $video->title }}</h5>
                         <p class="card-text">{{ $video->description }}</p>
                         <div class="card-footer align-content-center">
-                            <a href="/videocategories/{{ $videoCategory->id }}/videos/{{ $video->id }}/edit"  style="background-color:orange; border-color:orange; " class=" btn btn-raised btn-rounded z-depth-1 btn-warning">Edit Video Details</a>
-                            <form class="mt-2" action="/videocategories/{{ $videoCategory->id }}/videos/{{ $video->id }}/delete" method="post">
+                            <a href="/admin/videocategories/{{ $videoCategory->id }}/videos/{{ $video->id }}/edit"  style="background-color:orange; border-color:orange; " class=" btn btn-raised btn-rounded z-depth-1 btn-warning">Edit Video Details</a>
+                            <form class="mt-2" action="/admin/videocategories/{{ $videoCategory->id }}/videos/{{ $video->id }}/delete" method="post">
                                 @csrf
                                 @method('DELETE')
 

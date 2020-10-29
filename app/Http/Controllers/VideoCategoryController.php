@@ -10,7 +10,7 @@ class VideoCategoryController extends Controller
     public function create()
     {
         $videoCategories = VideoCategory::all();
-        return view("video_category.create", compact("videoCategories"));
+        return view("admin.video_category.create", compact("videoCategories"));
     }
 
     public function store()
@@ -20,6 +20,6 @@ class VideoCategoryController extends Controller
         ]);
 
         VideoCategory::create($data);
-        return redirect("/videocategories/create");
+        return redirect("/admin/videocategories/create");
     }
 }

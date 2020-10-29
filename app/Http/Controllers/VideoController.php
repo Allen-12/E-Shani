@@ -11,7 +11,7 @@ class VideoController extends Controller
     public function create(VideoCategory $videoCategory)
     {
 //        dd($videoCategory);
-        return view('video.create', compact("videoCategory"));
+        return view('admin.video.create', compact("videoCategory"));
     }
 
     public function store(VideoCategory $videoCategory)
@@ -30,18 +30,18 @@ class VideoController extends Controller
             'url' => $path
         ]);
 
-        return redirect("/videocategories/". $videoCategory->id . "/videos");
+        return redirect("/admin/videocategories/". $videoCategory->id . "/videos");
     }
 
     public function index(VideoCategory $videoCategory)
     {
         $videos = Video::where("category_id","=",$videoCategory->id)->get();
-        return view("video.index", compact("videoCategory","videos"));
+        return view("admin.video.index", compact("videoCategory","videos"));
     }
 
     public function edit(VideoCategory $videoCategory, Video $video)
     {
-        return view("video.edit", compact("video", "videoCategory"));
+        return view("admin.video.edit", compact("video", "videoCategory"));
     }
 
     public function update(VideoCategory $videoCategory, Video $video)
@@ -63,12 +63,12 @@ class VideoController extends Controller
         }
 
         $video->update($data);
-        return redirect("/videocategories/". $videoCategory->id . "/videos");
+        return redirect("/admin/videocategories/". $videoCategory->id . "/videos");
     }
 
     public function destroy(VideoCategory $videoCategory, Video $video)
     {
         $video->delete();
-        return redirect("/videocategories/". $videoCategory->id . "/videos");
+        return redirect("/admin/videocategories/". $videoCategory->id . "/videos");
     }
 }
