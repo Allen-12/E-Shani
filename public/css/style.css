@@ -55,3 +55,26 @@
    margin-bottom:5px
 }
 /* spacing nav code */
+
+/* avatar selection code */
+* {
+  box-sizing: border-box;
+}
+#avatars{
+  width:200px;
+  height: 300px;
+  overflow-y: auto;
+}
+.avatars > input{
+  display: none;
+}
+
+.avatars > input + img{
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.avatars > input:checked + img{
+  border: 2px solid red;
+}
+/* avatar selection code */

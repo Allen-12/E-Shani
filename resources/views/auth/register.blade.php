@@ -2,15 +2,7 @@
 @extends('layouts.auth')
 
 @section('content')
-<span class="navig">
-    <nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-lg bg-info"  color-on-scroll="100">
-        <div class="container">
-            <div class="navbar-translate">
-                <a href="/"><img src="{{URL::to('logo.png')}}"></a>
-            </div>
-        </div>
-    </nav>
-</span>
+ 
 
     <div class="page-header header-filter" style="background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'); background-size: cover; background-position: top center;">
 
