@@ -26,21 +26,29 @@ class ChildController extends Controller
     {
         $user = Auth::user();
         $data = \request()->validate([
-           'name' => 'required',
-           'age' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:4096',
+           'name' => 'string|required',
+           'age' => 'string|required',
+            'image' => 'string|required',
         ]);
-        $path = \request()->image->store("profile_images","public");
-        $child = $user->children()->create($data);
-        $child->update([
-            'image' => $path
-        ]);
-//        dd($child);
+//        $path = \request()->image->store("profile_images/".\request('image'),"public");
+//        dd($data);
+        $user->children()->create($data);
         return redirect("/profiles");
     }
 
     public function show(Child $child)
     {
         return "Welcome ". $child->name .". This is your personal educational page";
+    }
+
+    public function update(Child $child)
+    {
+        $data = \request()->validate([
+            'name' => 'string',
+            'image' => 'string',
+        ]);
+
+        $child->update($data);
+        return redirect("/profiles");
     }
 }

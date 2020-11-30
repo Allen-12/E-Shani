@@ -24,6 +24,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/profiles', 'ChildController@index');
 Route::get("/profiles/create", "ChildController@create");
 Route::post("/profiles", "ChildController@store");
+Route::patch("/profiles/{child}", "ChildController@update")->name("profile.update");
 Route::get('/profiles/{child}/show', 'ChildController@show'); // This route shall change very soon
 
 

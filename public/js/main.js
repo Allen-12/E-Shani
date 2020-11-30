@@ -106,3 +106,9 @@ $(window).load(function() {
 	$(".se-pre-con").fadeOut("slow");;
 });
 // Loader code
+
+$('#edit_user').on('click', function () {
+    console.log(this);
+    $('#edit_user_form').attr('action', $(this).data('update-link'));
+    $('#edit_name').attr('value',$(this).data('child-name'))
+});
