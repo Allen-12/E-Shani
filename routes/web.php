@@ -27,6 +27,11 @@ Route::post("/profiles", "ChildController@store");
 Route::patch("/profiles/{child}", "ChildController@update")->name("profile.update");
 Route::get('/profiles/{child}/show', 'ChildController@show'); // This route shall change very soon
 
+//This is a temporary route made by steven so that i can see my output during production..@allen change it when you are doing your thing
+Route::get('/topic', function () {
+    return view('user.topic');
+});
+
 
 // These routes are used for the admin side
 Route::get("/admin/videocategories/create","VideoCategoryController@create");
